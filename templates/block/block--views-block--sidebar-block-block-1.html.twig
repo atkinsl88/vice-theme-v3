@@ -1,0 +1,13 @@
+{% extends "block.html.twig" %}
+
+{# 
+  Used for the additional section tag and attribute for frontpage-featured.
+#}
+
+{% block content %}
+  {% if content %}
+    <div{{ attributes.addClass('slider-content') }}>
+      {{ content }}
+    </div>
+  {% endif %}
+{% endblock %}

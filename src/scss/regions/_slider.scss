@@ -1,0 +1,34 @@
+@include media-breakpoint-up (xs) {
+
+  .slider-region {
+    background-color: $secondary-color;
+    padding: $region-padding;
+    width: 100vw;
+    overflow-x: scroll;
+  }
+
+  .slider-content {
+    padding: 2rem;
+
+    .views-field-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .views-field-body {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .views-field-field-image img {
+      object-fit: cover;
+      border-radius: 10px;
+      height: 800px;
+      width: 1200px;
+    }
+
+  }
+
+}

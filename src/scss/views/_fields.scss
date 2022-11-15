@@ -1,0 +1,45 @@
+@include media-breakpoint-up (xs) {
+
+  .views-field {
+    margin: 1rem 0;
+  }
+
+  .views-field-field-tags {
+    a {
+      @extend %heading;
+      @extend h3;
+      &::before {
+        content: "○ ";
+      }
+    }
+  }
+
+  .views-field-field-image {
+    margin: 0;
+  }
+
+  .views-field-title {
+    width: 90%;
+    h2 {
+      a {
+        @extend %heading;
+        @extend h2;
+      }
+    }
+  }
+
+  .views-field-body {
+    width: 90%;
+  }
+
+  .views-field-created {
+    @extend %paragraph;
+    @extend p;
+  }
+
+  .views-field-uid {
+    @extend %paragraph;
+    @extend p;
+  }
+
+}

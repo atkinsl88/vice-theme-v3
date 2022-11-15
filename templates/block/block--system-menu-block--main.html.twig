@@ -1,0 +1,25 @@
+{# 
+  Used for the Main Menu menu navigation links.
+  Set array of classes and use not notation to chain.
+#}
+
+<nav class="navigation-burger container">
+
+  <div class="navigation-left">
+    <div class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    {# Primary navigation logo #}
+    <a href="/"><img class="logo" src="{{ directory ~ '/vice_logo.png' }}" /></a>
+    {# Primary navigation menu items #}
+    {# {% block content %}
+      {{ content }}
+    {% endblock %} #}
+  </div>
+
+  <div class="navigation-right">
+    <a href="/"><img class="icon" src="{{ directory ~ '/src/images/magnifying-glass.svg' }}" /></a>
+  </div>
+
+</nav>

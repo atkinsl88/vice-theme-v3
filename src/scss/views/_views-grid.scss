@@ -1,0 +1,19 @@
+@include media-breakpoint-up (xs) {
+
+  .views-card-grid {
+
+    .views-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem
+    }
+
+    .views-col {
+      img {
+        @extend %image;
+        height: 510px;
+      }
+    }
+
+  }
+}

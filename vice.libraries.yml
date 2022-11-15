@@ -1,0 +1,10 @@
+main:
+  version: 1.0
+  css:
+    theme:
+      dist/main.css: {}
+
+fonts:
+ css:
+   theme:
+     https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap: { type: external }
