@@ -1,0 +1,8 @@
+@include media-breakpoint-up (xs) {
+
+  .main-content {
+    background-color: $primary-color;
+    padding: $region-padding;
+  }
+
+}

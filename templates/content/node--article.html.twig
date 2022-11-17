@@ -1,0 +1,28 @@
+{#
+/**
+    Display an Article page.
+ */
+#}
+
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+    <h1{{ title_attributes }}></h1>
+  {{ title_suffix }}
+
+  {% if display_submitted %}
+    <div>
+      {{ author_picture }}
+      <div class="article-autor" {{ author_attributes }}>
+        {{ author_name }}
+        {{ date }}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="article-content" {{ content_attributes }}>
+    <h1>Title</h1>
+    {{ content }}
+  </div>
+  
+</article>

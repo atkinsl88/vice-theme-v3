@@ -2,32 +2,55 @@
 
   .slider-region {
     background-color: $secondary-color;
-    padding: $region-padding;
-    width: 100vw;
     overflow-x: scroll;
   }
 
   .slider-content {
-    padding: 2rem;
+    padding: 3rem;
+
+    .views-col {
+      width: 90%;
+    }
+
+    .views-card-grid .views-row {
+      margin-bottom: 0;
+    }
 
     .views-field-title {
-      position: absolute;
-      top: 0;
-      left: 0;
+      background-color: $primary-color;
+      padding: 1rem;
+      margin: -4px 0 0 0;
+      width: 98%;
     }
 
     .views-field-body {
-      position: absolute;
-      top: 0;
-      left: 0;
+      background-color: $primary-color;
+      margin: 0;
+      padding: 0 1rem;
+      width: 98%;
+      p {
+        width: 90ch;
+      }
     }
 
-    .views-field-field-image img {
-      object-fit: cover;
-      border-radius: 10px;
-      height: 800px;
-      width: 1200px;
+    .views-field-field-tags {
+      background-color: $primary-color;
+      padding: 1rem;
+      margin: 0;
+      width: 98%;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
+
+    .views-col .views-field-field-image img {
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 0;
+      height: 800px;
+    }
+
 
   }
 

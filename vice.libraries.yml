@@ -8,3 +8,21 @@ fonts:
  css:
    theme:
      https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap: { type: external }
+
+navigation:
+  js:
+    src/js/navigation.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
+
+copyright:
+  js:
+    src/js/copyright.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings

@@ -2,10 +2,13 @@
 
   .subscribe-region {
     background-color: $primary-color;
-    padding: $region-padding;
+    padding: 2rem 0 8rem 0;
   }
 
   .subscribe-form {
+    p {
+      width: 65ch;
+    }
     .subscribe-form-fields {
       margin: 2rem 0;
       input[type=text] {

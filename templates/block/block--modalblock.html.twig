@@ -1,0 +1,31 @@
+{#
+/**
+    Display custom Modal block.
+ */
+#}
+
+<div class="modal mystyle" id="myDIV">
+  <div class="container">
+    <div class="navigation-wrapper">
+      <div class="navigation-burger">
+        {# Primary navigation burger #}
+        <div class="burger" id="burgerMenuClose">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      {# Primary navigation logo #}
+      <a href="/"><img class="logo" src="{{ directory ~ '/vice_logo.png' }}" /></a>
+    </div>
+    {# Footer menu links #}
+    <div class="menu">
+      <div class="menu-links">
+        <h1>Pages</h1>
+        <a href="/world-news"><h3>World News</h3></a>
+        <a href="/environment"><h3>Save Yourselves</h3></a>
+        <a href="/music"><h3>Music</h3></a>
+        <a href="/life"><h3>Life</h3></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,12 +11,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    img.logo {
+      max-height: 46px;
+    }
     .navigation-left {
       display: flex;
       align-items: center;
-      img.logo {
-        max-height: 46px;
-      }
       a {
         margin-bottom: 0;
       }

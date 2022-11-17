@@ -1,12 +1,14 @@
 {% extends "block.html.twig" %}
 
-{# 
-  Used for the additional section tag and attribute for frontpage-featured.
+{#
+/**
+    Display The Latest block (view).
+ */
 #}
 
 {% block content %}
   {% if content %}
-    <div{{ attributes.addClass('the-latest-content container') }}>
+    <div class="the-latest-content container">
       <h1 class="latest-heading">The Latest</h1>
       {{ content }}
     </div>

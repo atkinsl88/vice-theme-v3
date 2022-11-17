@@ -1,0 +1,16 @@
+@include media-breakpoint-up (xs) {
+
+  article {
+    .article-content {
+      max-width: 120ch;
+      img {
+        border-radius: 10px;
+        margin-bottom: 2rem;
+      }
+    }
+    .article-author {
+      color: $secondary-color;
+    }
+  }
+  
+}

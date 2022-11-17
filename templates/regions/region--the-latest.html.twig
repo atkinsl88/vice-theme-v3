@@ -1,9 +1,11 @@
-{# 
-  Used for the Footer Menu menu navigation links.
+{#
+/**
+    Display The Latest content region.
+ */
 #}
 
 {% if content %}
-  <section{{ attributes.addClass('the-latest-region') }}>
+  <section class="the-latest-region">
     {{ content }}
   </section>
 {% endif %}

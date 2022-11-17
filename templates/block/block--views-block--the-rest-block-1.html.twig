@@ -1,12 +1,14 @@
 {% extends "block.html.twig" %}
 
-{# 
-  Used for the additional section tag and attribute for frontpage-featured.
+{#
+/**
+    Display The Rest block (view).
+ */
 #}
 
 {% block content %}
   {% if content %}
-    <div{{ attributes.addClass('the-rest-content container') }}>
+    <div class="the-rest-content container">
       <h1 class="rest-heading">More</h1>
       {{ content }}
     </div>
