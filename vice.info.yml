@@ -11,6 +11,7 @@ libraries:
   - vice/fonts
   - vice/navigation
   - vice/copyright
+  - vice/loading
 
 # Region metadata.
 regions:

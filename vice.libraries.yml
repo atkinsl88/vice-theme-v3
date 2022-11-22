@@ -26,3 +26,12 @@ copyright:
     - core/jquery
     - core/jquery.once
     - core/drupalSettings
+
+loading:
+  js:
+    src/js/loading.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
