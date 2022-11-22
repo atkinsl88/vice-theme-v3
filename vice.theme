@@ -1,0 +1,22 @@
+<?php
+
+// Preprocess function to use $variables on an article page.
+function vice_preprocess_node__article(&$variables) {
+  $variables['vice_quote'] = theme_get_setting('vice_quote');
+}
+
+// Function to create a form field on my theme which I can display on twig article node template.
+function vice_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id = NULL)
+{
+
+  if (isset($form_id)) {
+    return;
+  }
+
+  $form['vice_quote'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Vice Quote'),
+    '#default_value' => theme_get_setting('vice_quote'),
+    '#description'   => t("Place this text in the widget spot on your site."),
+  );
+}

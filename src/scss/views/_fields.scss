@@ -30,11 +30,26 @@
 
   .views-field-body {
     width: 90%;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .views-field-uid {
+    margin-bottom: 0;
+    a {
+      @extend %heading;
+      @extend h3;
+    }
+    h3 {
+      margin-bottom: 0
+    }
   }
 
   .views-field-created {
     @extend %paragraph;
     @extend p;
+    margin: 0.25rem 0;
   }
 
   .views-field-uid {

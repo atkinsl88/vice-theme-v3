@@ -1,0 +1,39 @@
+@include media-breakpoint-up (xs) {
+
+  .search {
+
+    input[type=search] {
+      min-width: 600px;
+      padding: 1rem;
+      background-color: $secondary-color;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+      min-height: 28px;
+      @extend p;
+      color: $primary-color;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      padding: $region-padding;
+    }
+
+    h3 {
+      a {
+        @extend h3;
+      }
+    }
+
+  }
+
+  /* TODO: Come back and configure this not needed. */
+  .search-advanced {
+    display: none;
+  }
+
+  /* TODO: Come back and configure this not needed. */
+  .search-help-link {
+    display: none;
+  }
+
+}

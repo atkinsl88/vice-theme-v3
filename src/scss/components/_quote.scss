@@ -1,0 +1,12 @@
+@include media-breakpoint-up (xs) {
+  .article-quote {
+    padding: 1rem 0;
+    a.ukraine {
+      display: flex;
+      &::before {
+        content: "🇺🇦";
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

@@ -2,13 +2,16 @@
 
   .footer {
     background-color: $primary-color;
-    padding: $region-padding;
   }
 
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: $region-padding;
+    img {
+      max-width: 200px;
+    }
     .footer-links {
       padding: 2rem 0;
       ul {

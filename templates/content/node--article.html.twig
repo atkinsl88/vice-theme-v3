@@ -6,23 +6,18 @@
 
 <article{{ attributes }}>
 
-  {{ title_prefix }}
-    <h1{{ title_attributes }}></h1>
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <div>
-      {{ author_picture }}
-      <div class="article-autor" {{ author_attributes }}>
-        {{ author_name }}
-        {{ date }}
-      </div>
-    </div>
-  {% endif %}
-
-  <div class="article-content" {{ content_attributes }}>
-    <h1>Title</h1>
+  <div class="article-content">
+    <h1{{ title }}> {{ label }}</h1>
     {{ content }}
+  </div>
+
+  <div class="article-autor">
+    <h3>{{ author_name }}</h3>
+    <h3>{{ date }}</h3>
+  </div>
+
+  <div class="article-quote">
+    <a class="ukraine" href="/ukraine"><h5>{{ vice_quote }}</h5></a>
   </div>
   
 </article>

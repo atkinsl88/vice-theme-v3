@@ -1,0 +1,8 @@
+# Store default value of additional text field in my theme settings.
+SETTING_NAME: DEFAULT_VALUE
+
+# Allow option for Favicon to be updated manually.
+features:
+  favicon: true
+favicon:
+  use_default: false

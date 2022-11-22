@@ -33,6 +33,7 @@
     @extend %heading;
     font-size: $mob-font-size-h3;
     line-height: $mob-font-size-h3 * 1.5;
+    margin-bottom: 0;
   }
 
   h4 {
@@ -45,6 +46,7 @@
     @extend %paragraph;
     font-size: $mob-font-size-sm;
     line-height: $mob-font-size-sm * 1.5;
+    margin-bottom: 1rem;
   }
 
   a {
