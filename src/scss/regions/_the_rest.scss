@@ -11,7 +11,7 @@
       line-height: 3.6rem;
     }
     .views-col {
-      width: 100% !important;
+      max-width: 100% !important;
     }
   }
 }
@@ -19,7 +19,7 @@
 @include media-breakpoint-up (md) {
   .the-rest-content {
     .views-col {
-      width: 33% !important;
+      max-width: 32% !important;
     }
   }
 }

@@ -5,7 +5,8 @@
     .views-row {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 2rem
+      margin-bottom: 2rem;
+      gap: 1rem;
     }
 
     .views-col {
