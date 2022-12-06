@@ -1,16 +1,9 @@
-@include media-breakpoint-up (xs) {
+@include media-breakpoint-up(xs) {
   .navigation-wrapper {
     display: flex;
     align-items: center;
-    min-height: 87px;
-    img {
-      margin: 0 1rem;
-    }
+    min-height: 77px;
   }
-}
-
-
-@include media-breakpoint-up (xs) {
   .burger {
     .line {
       width: 60px;
@@ -27,7 +20,7 @@
   .modal {
     height: 100vh;
     img.logo {
-      max-height: 46px;
+      max-height: 36px;
     }
     .navigation-title {
       p {
@@ -89,6 +82,20 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .navigation-wrapper {
+    min-height: 87px;
+    img {
+      margin: 0 1rem;
+    }
+  }
+  .modal {
+    img.logo {
+      max-height: 46px;
     }
   }
 }

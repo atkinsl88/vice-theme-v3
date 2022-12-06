@@ -1,26 +1,43 @@
 @include media-breakpoint-up (xs) {
-
   .footer {
     background-color: $primary-color;
   }
-
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: $region-padding;
     img {
-      max-width: 200px;
+      max-width: 100px;
     }
     .footer-links {
       padding: 2rem 0;
       ul {
         display: flex;
+        flex-direction: column;
+        margin-left: 0;
         li {
+          text-align: center;
           list-style: none;
+          margin-left: 0;
         }
       }
     }
   }
+}
 
+@include media-breakpoint-up (md) {
+  .footer-content {
+    img {
+      max-width: 200px;
+    }
+    .footer-links {
+      ul {
+        flex-direction: row;
+        li {
+          text-align: unset;
+        }
+      }
+    }
+  }
 }

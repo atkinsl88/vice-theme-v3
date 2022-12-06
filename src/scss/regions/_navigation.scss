@@ -1,18 +1,15 @@
 @include media-breakpoint-up (xs) {
-
   .navigation {
     background-color: $primary-color;
-    min-height: 80px;
     padding: 1rem 0;
   }
-
   .navigation-burger {
     display: flex;
     align-items: center;
     justify-content: space-between;
     // width: 100%;
     img.logo {
-      max-height: 46px;
+      max-height: 36px;
     }
     .navigation-left {
       display: flex;
@@ -21,7 +18,7 @@
         margin-bottom: 0;
       }
       .burger-menu {
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
         .line {
           width: 60px;
           height: 2px;
@@ -42,5 +39,20 @@
       }
     }
   }
+}
 
+@include media-breakpoint-up (md) {
+  .navigation {
+    min-height: 80px;
+  }
+  .navigation-burger {
+    img.logo {
+      max-height: 46px;
+    }
+    .navigation-left {
+      .burger-menu {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }
