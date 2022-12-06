@@ -1,8 +1,15 @@
 <?php
 
+// Preprocess function to load the loader JS onto the Homepage only.
+function vice_preprocess_page(&$vice_loader) {
+  if ($vice_loader['is_front'] == TRUE) {
+    $vice_loader['#attached']['library'][] = 'vice/loading';
+  }
+}
+
 // Preprocess function to use $variables on an article page.
-function vice_preprocess_node__article(&$variables) {
-  $variables['vice_quote'] = theme_get_setting('vice_quote');
+function vice_preprocess_node__article(&$vice_quote) {
+  $vice_quote['vice_quote'] = theme_get_setting('vice_quote');
 }
 
 // Function to create a form field on my theme which I can display on twig article node template.

@@ -1,6 +1,8 @@
 @include media-breakpoint-up (xs) {
 
   .search {
+    background-color: $primary-color;
+    min-height: 80vh;
 
     input[type=search] {
       min-width: 600px;
@@ -12,6 +14,11 @@
       @extend p;
       color: $primary-color;
       margin-bottom: 0;
+    }
+
+    input#edit-submit {
+      margin-left: 1rem;
+      padding: 1rem 2rem;
     }
 
     h2 {

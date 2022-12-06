@@ -1,17 +1,25 @@
 @include media-breakpoint-up (xs) {
-
   .the-rest-region {
     background-color: $primary-color;
     padding: $region-padding;
   }
-
   .the-rest-content {
     color: $secondary-color;
     h1.latest-heading {
       margin: 2rem 0;
-      width: 1ch;
+      // width: 1ch;
       line-height: 3.6rem;
     }
+    .views-col {
+      width: 100% !important;
+    }
   }
+}
 
+@include media-breakpoint-up (md) {
+  .the-rest-content {
+    .views-col {
+      width: 33% !important;
+    }
+  }
 }
