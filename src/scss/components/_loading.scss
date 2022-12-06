@@ -22,6 +22,10 @@
     justify-content: center;
     height: 100vh;
 
+    img {
+      max-width: 50%;
+    }
+
     img.opacity {
       opacity: 0.15;
     }
