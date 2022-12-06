@@ -1,0 +1,16 @@
+@include media-breakpoint-up (xs) {
+  .texonomy {
+    color: $secondary-color;
+    .views-col {
+      max-width: 100% !important;
+    }
+  }
+}
+
+@include media-breakpoint-up (md) {
+  .taxonomy {
+    .views-col {
+      max-width: 32% !important;
+    }
+  }
+}
