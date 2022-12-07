@@ -45,6 +45,7 @@ $region-padding: 2rem 0;
 /** Image **/
 %image {
   width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }

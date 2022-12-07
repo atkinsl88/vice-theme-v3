@@ -10,7 +10,8 @@ libraries:
   - vice/main
   - vice/fonts
   - vice/navigation
-  - vice/copyright
+  # Uncomment if loading screen should be available on all pages.
+  # - vice/loading
 
 # Region metadata.
 regions:
