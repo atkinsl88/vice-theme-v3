@@ -22,8 +22,8 @@
     justify-content: center;
     height: 100vh;
 
-    img {
-      max-width: 50%;
+    img.logo {
+      max-width: 300px;
     }
 
     img.opacity {
@@ -36,7 +36,7 @@
     }
 
     img.full {
-      animation: fadeIn 3s;
+      animation: fadeIn 4s;
       position: absolute;
     }
 

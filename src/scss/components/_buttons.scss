@@ -1,4 +1,4 @@
-@include media-breakpoint-up (xs) {
+@include media-breakpoint-up(xs) {
   button.primary {
     background-color: $primary-color;
     color: $secondary-color;
@@ -7,6 +7,27 @@
     border-color: $primary-color;
     border-radius: 10px;
     @extend h3;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    cursor: pointer;
+  }
+  button.primary:hover,
+  button.primary:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: $secondary-color;
+  }
+  button.primary:hover {
+    transform: translateY(-2px);
+  }
+  button.primary:active {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: $secondary-color;
+    transform: translateY(0);
   }
   input[type="submit"] {
     background-color: $secondary-color;
@@ -16,5 +37,26 @@
     border-color: $primary-color;
     border-radius: 10px;
     @extend h3;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: $primary-color;
+  }
+  input[type="submit"]:hover {
+    transform: translateY(-2px);
+  }
+  input[type="submit"]:active {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: $primary-color;
+    transform: translateY(0);
   }
 }

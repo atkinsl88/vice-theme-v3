@@ -28,6 +28,14 @@
   <li><a src="http://la-drupal-demo-2.space/">Link to site</a></li>
 </ul>
 
+<h2>Other Features</h2>
+
+<ul>
+  <li>404</li>
+  <li>Search</li>
+  <li>Sitemap</li>
+</ul>
+
 <h2>Plugins</h2>
 
 <ul>
@@ -36,6 +44,7 @@
   <li>Token: Provides additional tokens not supported by core</li>
   <li>Autopath: Automatically generates URL/path aliases for content types</li>
   <li>Metatag: Allows you to add meta information into content types</li>
+  <li>Sitemap: Provides a configurable sitemap page /sitemap</li>
 </ul>
 
 <h2>Hosting</h2>
