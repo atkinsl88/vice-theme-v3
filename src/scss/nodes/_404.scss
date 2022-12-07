@@ -1,0 +1,14 @@
+@include media-breakpoint-up (xs) {
+
+  .error-page-wrapper {
+    background-color: $primary-color;
+    padding: $region-padding;
+    .error-page-content {
+      text-align: center;
+      img {
+        max-width: 260px;
+      }
+    }
+  }
+  
+}
