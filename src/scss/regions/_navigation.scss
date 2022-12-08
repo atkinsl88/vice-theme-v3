@@ -49,7 +49,10 @@
 
 @include media-breakpoint-up (md) {
   .navigation {
-    min-height: 80px;
+    position: fixed;
+    background-color: $primary-color;
+    width: 100%;
+    z-index: 1;
   }
   .navigation-burger {
     img.logo {
