@@ -5,10 +5,15 @@
   }
   .the-latest-content {
     color: $secondary-color;
-    margin-top: 6rem;
     .views-col {
       width: 100% !important;
     }
+  }
+}
+
+@include media-breakpoint-up (md) {
+  .the-latest-content {
+    margin-top: 6rem;
   }
 }
 
